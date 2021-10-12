@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        html {
+            font-size: 2rem;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid w-75">
+        <h1>Form Validation</h1>
+        <form method="POST" action="" id="myFormId" type= "submit" name="myForm" class="row g-3 needs-validation" novalidate >
+            <div class="form-group col-md-6 ">
+                <label for="inputUserName">Username</label>
+                <input type="text" name="inputUserName" class="form-control " id="inputUserName">
+                <div class="invalid-feedback" id="errorUserName"></div>
+            </div>
+                <div class="form-group col-md-6 ">
+                    <label for="inputEmail">Email</label>
+                    <input type="text" name="inputEmail" class="form-control " id="inputEmail">
+                    <div class="invalid-feedback" id="errorEmail"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword">Contraseña</label>
+                    <input type="password" name="inputPassword" class="form-control " id="inputPassword">
+                    <div class="invalid-feedback" id="errorPassword"></div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassRepeat">Repite la contraseña</label>
+                    <input type="password" name="inputPassRepeat" class="form-control " id="inputPassRepeat">
+                    <div class="invalid-feedback" id="errorPassRepeat"></div>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="inputProvince">Provincia</label>
+                    <select id="inputProvince" class="form-control">
+                        <option selected="" value=""></option>
+                        <option>Barcelona</option>
+                        <option>Girona</option>
+                        <option>Tarragona</option>
+                        <option>Lleida</option>
+                    </select>
+                    <div class="invalid-feedback" id="errorProvince"></div>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCity">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity">
+                    <div class="invalid-feedback" id="errorCity"></div>
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputZip" class="text-nowrap">Codigo Postal</label>
+                    <input type="text" class="form-control " id="inputZip">
+                    <div class="invalid-feedback" id="errorZip"></div>
+                </div>
+           <div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        He llegit i acepto la politica de privacitat
+                    </label>
+                    <div class="invalid-feedback" id="errorCheck"></div>
+                </div>
+            </div>
+            <div class="col-12">
+            <button type="submit" class="btn btn-primary ">Registre</button>
+        </div></div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+
+
+
+</body>
+
+</html>
