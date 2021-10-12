@@ -18,61 +18,63 @@
 <body>
     <div class="container-fluid w-75">
         <h1>Form Validation</h1>
-        <form method="POST" action="" id="myFormId" type= "submit" name="myForm" class="row g-3 needs-validation" novalidate >
+        <form method="POST" action="" id="myFormId" type="submit" name="myForm" class="row g-3 needs-validation"
+            novalidate>
             <div class="form-group col-md-6 ">
                 <label for="inputUserName">Username</label>
                 <input type="text" name="inputUserName" class="form-control " id="inputUserName">
                 <div class="invalid-feedback" id="errorUserName"></div>
             </div>
-                <div class="form-group col-md-6 ">
-                    <label for="inputEmail">Email</label>
-                    <input type="text" name="inputEmail" class="form-control " id="inputEmail">
-                    <div class="invalid-feedback" id="errorEmail"></div>
+            <div class="form-group col-md-6 ">
+                <label for="inputEmail">Email</label>
+                <input type="text" name="inputEmail" class="form-control " id="inputEmail">
+                <div class="invalid-feedback" id="errorEmail"></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassword">Contraseña</label>
+                <input type="password" name="inputPassword" class="form-control " id="inputPassword">
+                <div class="invalid-feedback" id="errorPassword"></div>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputPassRepeat">Repite la contraseña</label>
+                <input type="password" name="inputPassRepeat" class="form-control " id="inputPassRepeat">
+                <div class="invalid-feedback" id="errorPassRepeat"></div>
+            </div>
+            <div class="form-group col-md-5">
+                <label for="inputProvince">Provincia</label>
+                <select id="inputProvince" class="form-control">
+                    <option selected="" value=""></option>
+                    <option>Barcelona</option>
+                    <option>Girona</option>
+                    <option>Tarragona</option>
+                    <option>Lleida</option>
+                </select>
+                <div class="invalid-feedback" id="errorProvince"></div>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputCity">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity">
+                <div class="invalid-feedback" id="errorCity"></div>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputZip" class="text-nowrap">Codigo Postal</label>
+                <input type="text" class="form-control " id="inputZip">
+                <div class="invalid-feedback" id="errorZip"></div>
+            </div>
+            <div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            He llegit i acepto la politica de privacitat
+                        </label>
+                        <div class="invalid-feedback" id="errorCheck"></div>
+                    </div>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassword">Contraseña</label>
-                    <input type="password" name="inputPassword" class="form-control " id="inputPassword">
-                    <div class="invalid-feedback" id="errorPassword"></div>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputPassRepeat">Repite la contraseña</label>
-                    <input type="password" name="inputPassRepeat" class="form-control " id="inputPassRepeat">
-                    <div class="invalid-feedback" id="errorPassRepeat"></div>
-                </div>
-                <div class="form-group col-md-5">
-                    <label for="inputProvince">Provincia</label>
-                    <select id="inputProvince" class="form-control">
-                        <option selected="" value=""></option>
-                        <option>Barcelona</option>
-                        <option>Girona</option>
-                        <option>Tarragona</option>
-                        <option>Lleida</option>
-                    </select>
-                    <div class="invalid-feedback" id="errorProvince"></div>
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="inputCity">Ciudad</label>
-                    <input type="text" class="form-control" id="inputCity">
-                    <div class="invalid-feedback" id="errorCity"></div>
-                </div>
-                <div class="form-group col-md-3">
-                    <label for="inputZip" class="text-nowrap">Codigo Postal</label>
-                    <input type="text" class="form-control " id="inputZip">
-                    <div class="invalid-feedback" id="errorZip"></div>
-                </div>
-           <div>
-            <div class="form-group">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        He llegit i acepto la politica de privacitat
-                    </label>
-                    <div class="invalid-feedback" id="errorCheck"></div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary ">Registre</button>
                 </div>
             </div>
-            <div class="col-12">
-            <button type="submit" class="btn btn-primary ">Registre</button>
-        </div></div>
         </form>
     </div>
 
